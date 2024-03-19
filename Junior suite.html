@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior Suite - The Hive Luxury Hotel</title>
+    <link rel="stylesheet" href="css/the-hive-luxury-styles.css">
+       <style>
+        :root {
+            --primary-color: #3a024a;
+            --secondary-color: #e07e4c;
+            --text-dark: #0f172a;
+            --text-light: #64748b;
+            --extra-light: #f8fafc;
+            --white: #ffffff;
+            --max-width: 1200px;
+            --header-font: "Playfair Display", serif;
+        }
+
+        body {
+            font-family: var(--header-font), Arial, sans-serif;
+            background-color: var(--white);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        .room__details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .room__info {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .room__image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .room__image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .reservation__form {
+            background-color: var(--extra-light);
+            padding: 20px;
+        }
+
+        .reservation__form h3 {
+            color: var(--text-dark);
+        }
+
+        .reservation__form form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .reservation__form label {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .reservation__form input,
+        .reservation__form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid var(--text-light);
+            margin-bottom: 15px;
+        }
+
+        .reservation__form button {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .reservation__form button:hover {
+            background-color: #cc6e3d;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        footer ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        footer ul li a:hover {
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="The Hive luxury index.html">Home</a></li>
+                
+        </nav>
+        
+    </header>
+
+    <section class="room__details">
+        <div class="room__image">
+            <img src="images/standard-room.webp" alt="Junior Suite">
+        </div>
+        <div class="room__info">
+            <h2   style="color: #e07e4c; text-align: center; font-size: 36px; font-family: 'Playfair Display', serif;">Junior Suite</h2>
+            <p style= "color:#64748b; text-align: center; font-size: 25px">
+                Designed for guests who desire a more a comfortable stay with modern amenities.
+            </p>
+            <h3 style="text-align: center; font-size: 36px;">$250 <span>/night</span></h3>
+            <!-- Embedded Video -->
+            <h5 style="color: #e07e4c; text-align: center; font-size: 20px; font-family: 'Playfair Display', serif;">Virtual Tour</h5>
+    <div style="text-align: center;">
+        <iframe width="450" height="300" src= "images/luxury.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+        </div>
+    </section>
+
+    <!-- Reservation Form (Modify as needed) -->
+    <section class="reservation__form">
+        <h3>Reservation Form</h3>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="check-in">Check-in Date:</label>
+            <input type="date" id="check-in" name="check-in" required><br><br>
+            
+            <label for="check-out">Check-out Date:</label>
+            <input type="date" id="check-out" name="check-out" required><br><br>
+            
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+            
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 The Hive Luxury Hotel. All Rights Reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

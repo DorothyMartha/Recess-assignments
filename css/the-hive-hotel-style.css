@@ -1,0 +1,199 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #8b55a1; /* Lighter purple background */
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.section {
+    padding: 50px 20px;
+}
+
+footer {
+    background-color: #8b55a1; /* Lighter purple background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #8b55a1; /* Lighter purple font color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #6a0dad;
+}
+/* Room Specific Styles */
+.room-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.room-details {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.room-title {
+    color: #8b55a1;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.room-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.room-features {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.room-features li {
+    margin-bottom: 5px;
+}
+
+.room-price {
+    font-size: 24px;
+    color: #8b55a1;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #240236fb;
+    color: #fff;
+    padding: 18px 28px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Contact and Location */
+#contact {
+    background-color: #240236fb; /* Purple background */
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-container h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: 600;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #040000;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form .btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #050008; /* Purple font color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-form .btn:hover {
+    background-color: #ddd;
+}
+
+.map-container {
+    margin-top: 30px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 0 20px;
+    }
+    .map-container {
+        margin-top: 20px;
+    }
+}
+/* Add more styles as needed */
